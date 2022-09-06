@@ -106,10 +106,49 @@ sidebar{
     grid-column: 1/2;
     grid-row: 1/3;
     color: white;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 150px repeat(auto-fit,50px);
+    
+    font-size: 22px;
+    padding-left: 10%;
+    padding-top: 5%;
+    
+    align-items: center;
+}
+
+sidebar h1{
+    margin-bottom: 50px;
     
 }
+
+#logo{
+    background-color: lightblue;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 50px;
+    margin-left: -10px;
+}
+
+sidebar img{
+    background-color: greenyellow;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+sidebar div{
+   
+    
+    margin-top: 200px;
+    
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: repeat(3,50px);
+}
+
+  
 
 main{
     background-color: rgb(225, 225, 225);
@@ -148,9 +187,10 @@ main{
 .project{
     background-color: white;
     padding: 5%;
-    border-left: 7px rgb(243, 180, 141) solid;
+    border-left: 7px yellowgreen solid;
     display: grid;
     grid-template-rows: 25px 1fr 25px;
+    border-radius: 10px;
 }
 
 .interact{
@@ -177,6 +217,7 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2px 1fr 2px 1fr;
+    border-radius: 10px;
     
 }
 
@@ -199,15 +240,17 @@ hr{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    
+    border-radius: 10px;
+    background-color: white;
 }
 
 .trending div{
-    background-color: white;
+    
    display: flex;
    align-items: center;
    padding-left: 10px;
    gap: 10px;
+  
 }
 
 .trending div img{
